@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>	
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery-1.12.2.min.js" ></script>
+		<style>
+			body {
+        background:url(img/pattern1.png) repeat;
+        font: 100% Arial,'Signika';
+        line-height: 20px;
+        font-weight: normal;
+        font-style: normal;
+        color: #999;
+           }
+        /*左边内容样式*/
+      .left_content{
+      	height: 500px;
+      	width: 230px;
+        float: left;
+      	display: inline-block;
+      	margin: 100px auto;
+      	margin-left: 200px;
+      }   
+      #img {
+         margin-left: 12px;
+         margin-bottom: 50px;
+         position: relative;
+         text-align: center;
+         color: white;
+         } 
+     #img img{
+         -webkit-border-radius: 4px 4px 0px 0px;
+         margin-left: -19px;
+         } 
+      #img hgroup{
+      	height: 50px;
+      	width:200px;
+      	background: peru;
+        -webkit-border-radius: 0px 0px 4px 4px;
+      }   
+      .left_content ul{
+      	height: 300px;
+      	width: 200px;
+      	margin-left: 8px;
+      	margin-top: -22px;
+      	position: relative;
+      }
+      .left_content ul li{
+      	height: 42px;
+      	width: 200px;
+      	border: 1px solid #999999;
+      	border-radius: 4px;
+      	background: #999999;
+      	margin: 5px;
+      	color: white;
+      	line-height: 42px;
+      	/*position: relative;*/
+      }
+      .left_content ul li .i{
+      	display: block;
+      	background:url(img/all1.png) no-repeat 0 0;
+      	height: 30px;
+      	width: 50px;
+      	position: absolute;
+        left:147px ; 
+       
+           }
+      .left_content ul li .i1{
+      	background-position: 22px 0; 
+      	top: 9px;
+      }
+       .left_content ul li .i2{
+      	background-position: -114px -4px;
+      	top:54px;
+      	left: 154px;
+      }
+       .left_content ul li .i3{
+      	background-position: -72px 0;
+        top: 100px;
+        left: 152px;
+      }
+       .left_content ul li .i4{
+      	background-position: -29px 0;
+      	top: 148px;
+      }
+      /*点击li弹出内容的样式*/
+     .left_content ul li .content{
+      	height:600px;
+      	width: 800px;
+      	display: inline-block;
+      	margin: 148px auto;
+      	display: none;
+      	border: 5px solid saddlebrown;
+      	padding-right: 5px;
+      	border-radius: 4px;
+      	position: absolute;
+      	left: 226px;
+        top: -427px;
+      }
+      /*自我简介*/
+      .left_content ul li .content_1 p{
+      	font-size: 16px;
+      	padding-left: 10px;
+      }
+    .left_content ul li  .content_1{
+      	display: block;
+        background: url(img/101Z15264-3.gif) no-repeat;
+        background-position: 313px 349px;
+      }
+      /*个人作品*/
+     .left_content ul li .content_3 .page{
+     	width: 33.3%;
+      height: 35%;
+      float: left;
+      position: relative;
+      margin: 10px;
+      border-radius: 30%;
+     } 
+     .left_content ul li .content_3 .page1{
+     	background: url(img/QQ截图20160411180954.png) no-repeat;
+     	background-size: 100% 100%;
+     }
+     .left_content ul li .content_3 .page2{
+     	background: url(img/QQ截图20160411181417.png) no-repeat;
+     	background-size: 100% 100%;
+     }
+     .left_content ul li .content_3 .page3{
+     	background: url(img/show2.png) no-repeat;
+     	background-size: 100% 100%;
+     }
+     .left_content ul li .content_3 .page4{
+     	background: url(img/show6.png) no-repeat;
+     	background-size: 100% 100%;
+     }
+     /*hover蒙版样式*/
+     .masking {
+        background: rgba(0, 0, 0, 0.75);
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        text-align: center;
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        line-height: 100%;
+        z-index: 3;
+        cursor: pointer;
+        border-radius: 30%;
+       }
+       .page:hover .masking {
+        	/*盒子hoverz之后，蒙版显示*/
+        	visibility: visible;
+        }
+        /*留言板*/
+       .left_content ul li  .content_4{
+        	padding-left: 20px;
+        }
+      .left_content ul li .content_4 .say{
+      	height: 80%;
+      	width:80%;
+      	border: 10px solid peru;
+      	margin-bottom: 5px;
+      	border-radius: 5px;
+      } 
+      .left_content ul li .content_4 #sub{
+      	height: 5%;
+      	width: 20%;
+      	color: peru;
+      	border-radius: 5px;
+      	}
+      h2{
+      	padding-left: 10px;
+      }
+      p{
+      	padding-left: 10px;
+      }
+		</style>
+	</head>
+	<body>
+		<div class="left_content">
+		<figure id="img">
+			<img src="img/img.png"/>
+			<hgroup>
+				<p>杨雪</p>
+			  <p>苦逼学习前端中</p>
+			</hgroup>
+		</figure>
+		<ul class="ul">
+			<li><i class="i i1"></i>
+				<p>自我介绍</p>
+				<div class=" content content_1">
+					<h2>自我介绍</h2>
+					<p>
+						您好！我来自河南，我是一名河南大学计算机科学与技术专业应届本科即将毕业的学员。<br/>
+						 我们的那个专业就是个大坑，学的是很多，什么都没学会，老师在应付我们也在应付，<br/>
+						 来这之前的了解只是大一老师讲的浅浅的一点东西，真的是被自己的专业坑惨了，<br/>
+						 其实没上大学之前我是个电脑白痴，自认为思维逻辑能力不是太强 ，所以选择了前端这个专业，<br/>
+						 比起后台那些还是比较喜欢前端，所以我会尽自己最大的努力好好学习，只要我下定决心的没有做不成的。<br/>
+						下面说一下我的性格：我的性格豪爽，为人坦率、热情、讲求原则；处事乐观、专心、细致、头脑清醒；<br/>
+						 富有责任心、乐于助人。我人际关系和谐，适应环境能力较强。就是一点没有耐心，不喜欢那些装逼做作的人交朋友<br/>
+					</p>
+				</div>
+			</li>
+			<li><i class="i i2"></i><p>能力</p>
+				<div class=" content content_2">
+					<h2>个人能力</h2>
+					<p>
+								<!-- 这里使用Bootstrap3的组件添加技能 //-->
+
+								<p>HTML/CSS/Javascript</p>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success" style="width:90%"></div>
+								</div>
+
+								
+                <p> c语言/c#/.net<p>
+								<div class="progress">
+									<div class="progress-bar progress-bar-primary" style="width:30%"></div>
+								</div>
+
+								<p>oracle数据库/linux</p>
+								<div class="progress">
+									<div class="progress-bar progress-bar-info" style="width:70%"></div>
+								</div>
+
+								<p>Photoshop</p>
+								<div class="progress">
+									<div class="progress-bar progress-bar-warning" style="width:60%"></div>
+								</div>
+							</p>
+				</div> 
+			</li>
+			<li><i class="i i3"></i>
+				<p>作品</p>
+				<div class="content content_3">
+					<h2>我的作品</h2>
+					<p>当然只是列举了几个.....嘿嘿</p>
+					<div class="page page1">
+						<div class="masking">轮播图</div>
+					</div>
+					<div class="page page2">
+						<div class="masking">百度新闻</div>
+					</div>
+					<div class="page page3">
+						<div class="masking">小米官网</div>
+					</div>
+					<div class="page page4">
+						<div class="masking">vivo官网</div>
+					</div>
+				</div>
+			</li>
+			<li><i class="i i4"></i><p>留言板</p>
+				<div class="content content_4">
+					<h2>请联系我：</h2>
+					<p>电话：157*****359</p>
+					<p>email:1280258420@qq.com</p>
+					<h2>留言：</h2>
+					<form action="index.php" method="post">
+						<!--<label>姓名</label>
+						<input type="text" name="name" id="name" value="" />
+						<label>邮箱</label>
+						<input type="text" name="email" id="email" value="" />-->
+						<label for="title">邮件主题</label>
+						<input type="text" style="color: peru;" name="title" id="title" value=""  />
+          <textarea name="body" style="height: 80% ; width: 80%; color: peru;" id="message"></textarea><br>
+				  <input type="submit" name="sub" id="sub" value="提交" />
+					</form> 
+				</div>
+			</li>
+		</ul>
+		</div>
+		<script type="text/javascript">
+			$(".ul").on("click",">li",function(){
+		    	var index =$(this).index();
+		    	$(".content").hide();
+				$($(".content").get(index)).show();
+				})
+		
+		</script>
+	</body>
+</html>
